@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyBuddy Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+    <div class="header-container">
+      <!-- <img src="logo.svg" alt="StudyBuddy Logo" id="logo"> -->
+      <h1>StudyBuddy</h1>
+    </div>
+    <nav>
+      <ul>
+         <li><a href="#" data-section="dashboard" class="active">Dashboard</a></li>
+         <li><a href="#" data-section="assignments">Assignments</a></li>
+         <li><a href="#" data-section="collaboration">Collaboration</a></li>
+         <li><a href="#" data-section="profile">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="content-section active">
+      <h2>Dashboard</h2>
+      <p>Welcome, Student! Here's a quick overview of your study progress and upcoming deadlines.</p>
+      <div class="stats">
+         <div class="stat-box">
+           <h3>Assignments Due</h3>
+           <p>3</p>
+         </div>
+         <div class="stat-box">
+           <h3>Study Sessions</h3>
+           <p>2 Upcoming</p>
+         </div>
+         <div class="stat-box">
+           <h3>Group Chats</h3>
+           <p>1 Active</p>
+         </div>
+      </div>
+    </section>
+    
+    <!-- Assignments Section -->
+    <section id="assignments" class="content-section">
+      <h2>Assignments</h2>
+      <p>View and manage your assignments. Upcoming assignments are listed below:</p>
+      <ul class="assignment-list">
+         <li><strong>Math Homework:</strong> Due April 5, 2025</li>
+         <li><strong>History Essay:</strong> Due April 7, 2025</li>
+         <li><strong>Science Project:</strong> Due April 10, 2025</li>
+      </ul>
+    </section>
+    
+    <!-- Collaboration Section -->
+    <section id="collaboration" class="content-section">
+      <h2>Collaboration</h2>
+      <p>This section is for group projects and real-time collaboration. Chat with your peers below:</p>
+      <div class="chat-box">
+         <div class="chat-message"><strong>Sarah:</strong> Don’t forget to review the assignment requirements!</div>
+         <div class="chat-message"><strong>Ahmad:</strong> I’ve uploaded the draft, please take a look.</div>
+         <div class="chat-message"><strong>Oussama:</strong> Let's schedule a meeting tomorrow at 3 PM.</div>
+      </div>
+      <form id="chat-form">
+         <input type="text" id="chat-input" placeholder="Type a message..." required>
+         <button type="submit">Send</button>
+      </form>
+    </section>
+    
+    <!-- Profile Section -->
+    <section id="profile" class="content-section">
+      <h2>Profile</h2>
+      <p>Manage your profile information here.</p>
+      <form id="profile-form">
+         <label for="name">Name:</label>
+         <input type="text" id="name" placeholder="Your name">
+         <label for="email">Email:</label>
+         <input type="email" id="email" placeholder="Your email">
+         <button type="submit">Update Profile</button>
+      </form>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <p>StudyBuddy Demo &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
